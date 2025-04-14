@@ -40,34 +40,23 @@ source /tmp/anaconda3/bin/activate
 2. Install PyTorch (v1.4)
 
 ```bash
-conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
+conda env create -f presentation_resources/env.yml
 ```
 
 3. Install ``torchph``. 
 
 ```bash
-pip install git+https://github.com/c-hofer/torchph.git@0.0.0
+pip install git+https://github.com/c-hofer/torchph.git@8f34b31caa39e817b5bafe5a59b2e92cd128ee24
 ```
 
 4. Clone this GitHub repository.
 
 ```bash
 cd /tmp/
-git clone https://github.com/c-hofer/jmlr_2019.git --recurse-submodules
+git clone https://github.com/baniamerian/barcode_learning_core.git --recurse-submodules
 ```
 
-5. Download data
-
-All data can be downloaded [here](https://drive.google.com/open?id=148hoKBu1bbnWcAf4pErGWaOwnXzr7jxy). Unzip the ZIP file using `unzip`
-
-```
-cd /tmp/jmlr_2019/core
-unzip jmlr2019_datasets.zip
-```
-
-This should create a folder `datasets` in `/tmp/jmlr_2019/core/`.
-
-6. Start jupyter notebook server in repository folder.
+5. Start jupyter notebook server in repository folder.
 
 ```bash
 cd /tmp/jmlr_2019
